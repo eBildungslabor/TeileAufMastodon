@@ -29,7 +29,7 @@
 		</script>
 		{% endif %}
 
-		<title>Advanced Sharer for Mastodon</title>
+		<title>Teile Inhalte aus dem Internet auf Mastodon!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8" />
 		<link rel="canonical" href="https://sharetomastodon.github.io/about/" />
@@ -40,30 +40,21 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<h1>Advanced Sharer for Mastodon</h1>
+				<h1>Teile Inhalte aus dem Internet auf Mastodon!</h1>
 
 				<img src="../assets/about_header.png" />
-				<h2>Share all the internet!</h2>
+				<h2>Link generieren - Teilen-Button beim Inhalt hinzufügen - Viele Inhalte ins Fediverse bringen :-)</h2>
 			</header>
 
 			<article>
-                <a href="../demo.gif"><img class="gif" src="../demo.gif"></a>
-                <br/>
-				<h3>Features</h3>
-				<ul>
-					<li>Share websites on any Mastodon instance. Popular instances already available on a list.</li>
-					<li>Optionally memorize your last 3 instances.</li>
-					<li><b>Privacy</b>: all user data is stored on the browser local storage.</li>
-				</ul>
-			</article>
-
+              
 			<article>
-				<h3>Buttons and add-ons</h3>
+				<h3>Generiere einen Link für Deine Website!</h3>
 
 				<h4>Sharing buttons</h4>
 
 				<input type="radio" name="code" id="nojs"/>
-				<label for="nojs">Without JavaScript</label>
+				<label for="nojs">Ohne JavaScript</label>
 
 				<div class="hidden">
 					<a class="testsh" href="https://sharetomastodon.github.io/?title=Mastodon Advanced Sharer&url=https://sharetomastodon.github.io/" target="_blank">
@@ -74,7 +65,7 @@
 				</div>
 
 				<input type="radio" name="code" id="btjs"/>
-				<label for="btjs">With JavaScript</label>
+				<label for="btjs">Mit JavaScript</label>
 
 				<div class="hidden">
 					<a class="testsh" href="javascript:;" onclick="window.open('https://sharetomastodon.github.io/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank">
@@ -84,7 +75,7 @@
 				</div>
 
 				<input type="radio" name="code" id="jstxt"/>
-				<label for="jstxt">With JavaScript & text</label>
+				<label for="jstxt">Mit JavaScript & Text</label>
 
 				<div class="hidden">
 					<a class="testsh" href="javascript:;" onclick="window.open('https://sharetomastodon.github.io/?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title),'das','location=no,links=no,scrollbars=no,toolbar=no,width=620,height=550'); return false;" rel="nofollow" target="_blank" style="padding: 3px 4px 2px; background: #fafafa; border: 1px solid #ddd; font-size: 13px; color: #222; text-decoration: none;">
@@ -94,21 +85,7 @@
 	&lt;/a></pre>
 				</div>
 
-				<input type="radio" name="code" id="blgrr"/>
-				<label for="blgrr">Blogger</label>
-
-				<div class="hidden">
-					This method will include a Mastodon share button next to Google +1 button. It is necessary to <a href="https://buzz.blogger.com/2010/06/new-share-buttons.html">enable the sharing buttons</a>.
-					<ul>
-						<li>Enter <a href="https://www.blogger.com/home">your dashboard</a> and choose your blog.</li>
-						<li>In section <b>Template</b>, click on <b>Edit HTML</b>. If a warning appears, click <b>Continue</b>.</li>
-						<li>Check <b>Expand widget templates</b>, press Ctrl+F and write <i>sharebuttons</i>.</li>
-						<li>Find the line <code>&lt;b:includable id='shareButtons' var='post'></code>. Just after that, copy the following code:</li>
-					</ul>
-					<pre>&lt;a expr:href='&quot;https://sharetomastodon.github.io/?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' target='_blank' title='Share on Mastodon'>
-	&lt;img src='https://sharetomastodon.github.io/favicon.png' style='width:16px; height:16px; padding:0; border:0; vertical-align:middle;'/>
-&lt;/a></pre>
-				</div>
+				
 			</article>
 
 			<article>
